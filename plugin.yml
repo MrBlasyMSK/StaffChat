@@ -1,0 +1,18 @@
+name: StaffChat
+main: octopush\staffchat\StaffChat
+version: 1.0-alpha
+api: 4.0.0
+author: Octopush
+description: A simple staff chat for PocketMine-MP
+website: https://github.com/octopussh
+
+permissions:
+  staffchat.cmd:
+    description: main permission for staffchat command
+    default: op
+  staffchat.chat:
+    description: permission for sending messages in staffchat
+    default: op
+  staffchat.read:
+    description: permission for reading messages in staffchat
+    default: op

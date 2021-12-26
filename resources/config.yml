@@ -1,0 +1,22 @@
+---
+# The prefix for the staff chat messages
+prefix: "&b[SC]&r "
+# Enable this to send staff chat messages to the console
+console-attach: true
+# The format for the staffchat messages
+staffchat-format: "%prefix% &b%player%: &f%message%"
+# Functions are shortcuts to insert data in the chat quickly
+# Available function shortcuts:
+# !near = Insert near players in the chat
+# !focus = Insert the player you are looking at
+# !pos = Insert your current position and world
+enable-functions: true
+# You can change the symbol for the functions
+functions-executor: "!"
+# Announce staff joining and leaving the staff chat
+announce-state: true
+# The message format for the join message
+join: "&b%player% &fjoined the staff chat"
+# The message format for the leave message
+leave: "&b%player% &fleft the staff chat"
+...
