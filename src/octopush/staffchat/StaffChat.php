@@ -61,7 +61,7 @@ class StaffChat extends PluginBase implements Listener
 		$leaveFormat = $this->getConfig()->get('join',"&b%player% &fleft the staff chat");
 		$leaveFormat = str_replace("%player%", $sender->getName(), $leaveFormat);
 		$leaveMessage = $this->colorize($leaveFormat);
-		foreach ($this->staffChat as $staff) {
+		foreach ($this->staffChat as $staff => $value) {
 			$staff = $this->getServer()->getPlayerExact($staff);
 			if ($staff?->isOnline() && $staff?->hasPermission(self::READ_PERMISSION)) {
 				$staff?->sendMessage($leaveMessage);
